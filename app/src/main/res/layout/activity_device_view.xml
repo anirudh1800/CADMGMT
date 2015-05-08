@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/deviceViewLayout"
+    tools:context=".DeviceViewActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Memory Available:"
+        android:id="@+id/textMemory"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Signal Strength:"
+        android:id="@+id/textSignal"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/textMemory"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Latitude:"
+        android:id="@+id/textLatitude"
+        android:layout_below="@+id/textSignal"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Longitude:"
+        android:id="@+id/textLongitude"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time:"
+        android:id="@+id/textTime"
+        android:layout_below="@+id/textLongitude"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editMemory"
+        android:layout_toEndOf="@+id/textMemory"
+        android:layout_alignTop="@+id/textMemory"
+        android:ems="10"
+        android:editable="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editLatitude"
+        android:ems="10"
+        android:editable="false"
+        android:layout_toEndOf="@+id/textSignal"
+        android:layout_alignBaseline="@+id/textLatitude"
+        android:layout_alignBottom="@+id/textLatitude"
+        android:layout_alignStart="@+id/editMemory" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editLongitude"
+        android:ems="10"
+        android:editable="false"
+        android:layout_toEndOf="@+id/textLatitude"
+        android:layout_alignBottom="@+id/textLongitude"
+        android:layout_alignStart="@+id/editLatitude" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTime"
+        android:ems="10"
+        android:editable="false"
+        android:layout_alignBottom="@+id/textTime"
+        android:layout_alignStart="@+id/editLongitude" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:id="@+id/editSignal"
+        android:ems="10"
+        android:layout_alignTop="@+id/textSignal"
+        android:layout_alignStart="@+id/editLatitude" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show apps"
+        android:id="@+id/btnApps"
+        android:background="@drawable/bg_button"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

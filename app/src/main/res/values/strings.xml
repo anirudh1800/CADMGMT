@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CADMGMT</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_abcd">abcd</string>
+    <string name="title_activity_devices">DevicesActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_device_view">DeviceViewActivity</string>
+
+    <string-array name="devices_drawer_items">
+        <item>Reload</item>
+        <item>Add device</item>
+        <item>Remove device</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string name="drawer_open">Device Drawer</string>
+    <string name="drawer_close">Device</string>
+    <string name="title_activity_app_view">AppViewActivity</string>
+    <string name="title_activity_lock_screen">LockScreen</string>
+
+</resources>
